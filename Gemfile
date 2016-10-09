@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 gem 'bcrypt', '~> 3.1.7'
+gem 'puma'
+gem 'rails_12factor', '~> 0.0.3'
+gem 'unicorn', '~> 5.1'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -50,6 +53,7 @@ group :development do
 end
 
 group :test do
-
+  gem 'rails-controller-testing'
+  gem 'minitest-reporters', '~> 1.1', '>= 1.1.11'
 end
 
